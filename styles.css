@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1280px; 
+    width: 100%; 
+    margin: 0 auto;
+    
+    
+}
+header {
+    padding: 8px 0; 
+    background-color: rgb(59, 112, 205);
+    
+}
+header nav li{
+    display: inline;
+    margin-left: 8px;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+
+header nav li a{
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+}
+header nav li a:hover{
+    color: rgb(255, 157, 0);
+}
+header img{
+    height: 100px;
+}
+
+header .container{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+section .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    text-align: center;
+}
+section img{
+    height: 300px;
+    text-align: center;
+}
+section .produtos img:hover{
+    height: 330px;
+    
+}
+section a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(59, 112, 205);
+    font-size: 24px;
+}
+section h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 32px;
+    margin-bottom: 32px;   
+    color: rgb(255, 157, 0); 
+}
+
+section .logoLoja img{
+    height: 500px;
+}
+section .descricaoLoja p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px; 
+    color: rgb(59, 112, 205);  
+}
+#contato .container{
+    justify-content:space-around;
+}
+section .redesSociais img{
+    height: 80px;
+    margin-top: 8px;
+}
+section .redesSociais img:hover{
+    height: 85px;
+}
+section .redesSociais h2,
+section .formContato h2{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 16px;
+    color: rgb(59, 112, 205);
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: rgb(59, 112, 205);
+}
+form button{
+    background-color: rgb(59, 112, 205);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+input:focus, textarea:focus {
+    outline-color: rgb(59, 112, 205);
+}
+form button:hover{
+    background-color: rgb(101, 147, 227);
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(59, 112, 205);
+    color: #ffffff;
+    padding: 16px 0;
+    margin-top: 32px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+body{
+    background-color: #e0e0e0;
+}
+
+
+
+
+
