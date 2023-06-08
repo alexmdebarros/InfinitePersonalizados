@@ -3,23 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .container {
-    max-width: 1280px; 
+    max-width: 1024px; 
     width: 100%; 
     margin: 0 auto;
-    
-    
 }
+
 header {
     padding: 8px 0; 
     background-color: rgb(59, 112, 205);
-    
 }
+
 header nav li{
     display: inline;
     margin-left: 8px;
     font-size: 24px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
@@ -27,9 +27,11 @@ header nav li a{
     color: rgb(255, 255, 255); 
     text-decoration: none; 
 }
+
 header nav li a:hover{
     color: rgb(255, 157, 0);
 }
+
 header img{
     height: 100px;
 }
@@ -39,105 +41,222 @@ header .container{
     align-items: center; 
     justify-content: space-between; 
 }
-section .container{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-    text-align: center;
-}
-section img{
-    height: 300px;
-    text-align: center;
-}
-section .produtos img:hover{
-    height: 330px;
-    
-}
-section a{
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    color: rgb(59, 112, 205);
-    font-size: 24px;
-}
-section h1{
-    text-align: center;
-    font-size: 48px;
-    font-family: 'Bebas Neue', sans-serif;
-    margin-top: 32px;
-    margin-bottom: 32px;   
-    color: rgb(255, 157, 0); 
+
+article .container-sobre{
+    display: grid;
+    grid-template-columns: 45% 53%;
+    column-gap: 2%;      
+    margin-top: 32px;   
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%; 
+    margin-bottom: 32px;
 }
 
-section .logoLoja img{
-    height: 500px;
+article h1, section h1{
+    margin-bottom: 16px;
+    border-bottom: 4px solid red;
+    padding: 8px 0;    
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
 }
-section .descricaoLoja p{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 18px;
-    text-align: left;
-    margin-right: 20px;
-    margin-left: 20px; 
-    color: rgb(59, 112, 205);  
+
+article img{
+    max-width: 100%;    
 }
-#contato .container{
-    justify-content:space-around;
+
+.container-produtos ul{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%); 
+    column-gap: 1%;         
+    margin-top: 32px;   
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    list-style: none;
 }
-section .redesSociais img{
-    height: 80px;
+
+.container-produtos h3,
+.container-produtos p{
     margin-top: 8px;
 }
-section .redesSociais img:hover{
-    height: 85px;
+
+.preco{
+    margin-top: 16px;
+    font-size: 2em;
 }
-section .redesSociais h2,
-section .formContato h2{
-    font-family: 'Bebas Neue', sans-serif;
-    margin-bottom: 16px;
-    color: rgb(59, 112, 205);
+
+.container-produtos button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(93, 93, 242);
+    color: white;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.container-produtos button:hover{
+    background-color: rgb(134, 134, 245);
+}
+
+section .container-produtos img{
+    width: 100%;
+}
+
+.formContato{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 32px 0;
+}
+
+section h1{
+    margin-top: 32px;
+}
+
+.formContato form input,
+.formContato form textarea,
+.formContato form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px; 
+    font-family: 'Roboto', sans-serif;
 }
 
 form textarea{
     resize: none;
     height: 180px;
 }
-form input,
-form textarea,
-form button {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-    border-radius: 5px;
-    border-color: rgb(59, 112, 205);
-}
+
 form button{
-    background-color: rgb(59, 112, 205);
-    border-radius: 10px;
-    border: none;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(93, 93, 242);
     color: white;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif
-}
-input:focus, textarea:focus {
-    outline-color: rgb(59, 112, 205);
-}
-form button:hover{
-    background-color: rgb(101, 147, 227);
+    margin-top: 8px;
+    border: none;
     cursor: pointer;
 }
-footer {
+
+form button:hover{
+    background-color: rgb(131, 131, 246);
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(59, 112, 205);
-    color: #ffffff;
+    color: #ecf0f1;
     padding: 16px 0;
-    margin-top: 32px;
-    font-family: 'Bebas Neue', sans-serif;
 }
-body{
-    background-color: #e0e0e0;
+footer p{
+    margin-left: 16px;
+}
+footer img{
+    height: 50px;
+    margin-right: 16px;
+    border: 2px solid white;
+    padding: 3px;
+}
+footer a{
+    text-decoration: none;
 }
 
+/*inicio das configurações de responsividade*/
 
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: 90%;
+    }
 
+    header nav ul{
+        margin-top: 16px;
+    }
+    header nav li{
+        display: inline;        
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    header img{
+        height: 90px;
+    }
+    header .container{
+        display: block;
+        text-align: center;
+    }
+
+    article .container-sobre{
+        display: block;          
+        font-family: 'Roboto', sans-serif;
+        max-width: 100%; 
+    }    
+    article h1{
+        margin-bottom: 16px;
+        border-bottom: 4px solid red;
+        padding: 8px 0;    
+        font-size: 32px;        
+    }
+
+    .container-produtos ul{
+        display: block;          
+        font-family: 'Roboto', sans-serif;
+        max-width: 100%;
+        list-style: none;
+        text-align: center;
+    }    
+    .container-produtos h3,
+    .container-produtos p{
+        margin-top: 8px;
+    }    
+    .preco{
+        margin-top: 16px;
+        font-size: 1.5em;
+    }    
+    .container-produtos button{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    section .container-produtos img{
+        width: 100%;
+    }
+
+    footer .container{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+    header nav ul{
+        margin-top: 16px;
+    }
+    header nav li{
+        display: inline;        
+        font-size: 1.5em;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    header img{
+        max-width: 100%;
+    }
+
+    .container-produtos ul{
+        grid-template-columns: repeat(2, 48.5%);
+        row-gap: 1%;
+    }
+    .container-produtos button{
+        margin-top: 8px;
+    }
+    
+}
 
 
